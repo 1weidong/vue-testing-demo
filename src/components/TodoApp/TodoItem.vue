@@ -13,6 +13,13 @@
 
 export default {
     name: 'TodoItem',
+    props: {
+        todo: {
+            type: Object,
+            require: true,
+            default: () => {}
+        }
+    },
     components: {},
     data() {
         return {
