@@ -24,6 +24,9 @@ export default {
     methods: {
         handleNewTodo(e) {
             const value = e.target.value.trim();
+            if (!value.length) {
+                return;
+            }
             this.$emit('new-todo', value);
             e.target.value = '';
         }

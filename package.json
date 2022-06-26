@@ -6,6 +6,7 @@
     "serve": "npm run lint-fix && vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "coverage": "vue-cli-service test:unit --coverage",
     "lint": "vue-cli-service lint",
     "lint-fix": "eslint --ext .ts,vue --ignore-path .gitignore ."
   },

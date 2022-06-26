@@ -1,13 +1,10 @@
 <template>
   <div id="app">
-    <TodoApp />
+    <router-view></router-view>
   </div>
 </template>
 <script>
-import TodoApp from '@/components/TodoApp/index.vue'
 export default {
-  components: {
-    TodoApp
-  }
+  name: 'App'
 }
 </script>
